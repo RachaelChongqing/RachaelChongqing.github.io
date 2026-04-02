@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living in Chongqing: The Ultimate Guide</title>
+    <style>
+        /* --- CSS Styles --- */
+        :root {
+            --primary-color: #d32f2f; /* Chongqing Red */
+            --secondary-color: #2c3e50; /* Dark Blue */
+            --accent-color: #fbc02d; /* Gold/Yellow */
+            --bg-light: #f9f9f9;
+            --text-color: #333;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-light);
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1545063914-1a0c687472a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--secondary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 3px solid var(--primary-color);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Cards */
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-header {
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+        }
+
+        /* Specific Header Colors */
+        .bg-eat { background-color: #ff7043; }
+        .bg-stay { background-color: #42a5f5; }
+        .bg-transport { background-color: #66bb6a; }
+        .bg-medical { background-color: #ef5350; }
+        .bg-tour { background-color: #ab47bc; }
+        .bg-shop { background-color: #ffa726; }
+        .bg-fun { background-color: #29b6f6; }
+
+        .card-body {
+            padding: 25px;
+        }
+
+        .card-title {
+            margin-top: 0;
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+        }
+
+        .tips-box {
+            background-color: #fff9c4;
+            padding: 15px;
+            border-left: 5px solid var(--accent-color);
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            header p { font-size: 1rem; }
+            nav ul { flex-direction: column; text-align: center; }
+            nav ul li { margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#eat">Eat</a></li>
+            <li><a href="#stay">Stay</a></li>
+            <li><a href="#transport">Transport</a></li>
+            <li><a href="#medical">Medical</a></li>
+            <li><a href="#tour">Tour</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#fun">Fun</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Header -->
+    <header>
+        <div>
+            <h1>Welcome to Chongqing</h1>
+            <p>Your Essential Guide to Living in the Mountain City</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div style="text-align: center;">
+            <h2 class="section-title">The 7 Essentials of Life</h2>
+        </div>
+
+        <div class="grid">
+            
+            <!-- 1. Eat -->
+            <div class="card" id="eat">
+                <div class="card-header bg-eat">🍜</div>
+                <div class="card-body">
+                    <h3 class="card-title">Eat (吃)</h3>
+                    <p>Chongqing is famous for its spicy food. The cuisine is bold, numbing, and flavorful.</p>
+                    <ul>
+                        <li><strong>Chongqing Hotpot:</strong> A must-try. Beef tallow base with chili peppers.</li>
+                        <li><strong>Xiao Mian:</strong> Spicy noodles, the standard breakfast for locals.</li>
+                        <li><strong>Suan La Fen:</strong> Hot and sour sweet potato noodles.</li>
+                    </ul>
+                    <div class="tips-box">
+                        <strong>Tip:</strong> If you can't handle spice, ask for "Wei La" (Mild spicy), though it might still be hot!
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Stay -->
+            <div class="card" id="stay">
+                <div class="card-header bg-stay">🏠</div>
+                <div class="card-body">
+                    <h3 class="card-title">Stay (住)</h3>
+                    <p>Finding the right location is key in this sprawling city.</p>
+                    <ul>
+                        <li><strong>Jiefangbei:</strong> City center, expensive but convenient for shopping and nightlife.</li>
+                        <li><strong>Guanyinqiao:</strong> Another major commercial hub, popular with young people.</li>
+                        <li><strong>Dashiba / University Town:</strong> Cheaper rent, quieter, good for long-term stays.</li>
+                    </ul>
+                    <div class="tips-box">
+                        <strong>Tip:</strong> Use apps like <em>Wellcee</em> or local agents to find apartments.
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Transport -->
+            <div class="card" id="transport">
+                <div class="card-header bg-transport">🚇</div>
+                <div class="card-body">
+                    <h3 class="card-title">Transport (行)</h3>
+                    <p>Chongqing has a complex but efficient public transport system.</p>
+                    <ul>
+                        <li><strong>Metro (CRT):</strong> The best way to avoid traffic. Lines 1, 2, 3, and 6 cover most areas.</li>
+                        <li><strong>Didi (Taxi):</strong> Very affordable. Use the Alipay or WeChat mini-program to call a car.</li>
+                        <li><strong>Walking:</strong> Be prepared for hills. "1st floor" in one building might be the "10th floor" in another.</li>
+                    </ul>
+                    <div class="tips-box">
+                        <strong>Tip:</strong> Google Maps doesn't work well. Use <em>Apple Maps</em> or <em>Amap (Gaode)</em>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Medical -->
+            <div class="card" id="medical">
+                <div class="card-header bg-medical">🏥</div>
+                <div class="card-body">
+                    <h3 class="card-title">Medical (医)</h3>
+                    <p>Healthcare is accessible, but language barriers can exist in public hospitals.</p>
+                    <ul>
+                        <li><strong>Public Hospitals:</strong> Xinqiao Hospital and Southwest Hospital are top-tier but crowded.</li>
+                        <li><strong>International Clinics:</strong> Look for "International Departments" within major hospitals for English-speaking doctors.</li>
+                        <li><strong>Pharmacies:</strong> Easily identifiable by a green cross. Good for basic cold/flu meds.</li>
+                    </ul>
+                    <div class="tips-box">
+                        <strong>Tip:</strong> Always carry your passport when visiting a hospital for registration.
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Tour -->
+            <div class="card" id="tour">
+                <div class="card-header bg-tour">📸</div>
+                <div class="card-body">
+                    <h3 class="card-title">Tour (游)</h3>
+                    <p>A city of stunning contrasts and unique geography.</p>
+                    <ul>
+                        <li><strong>Hongyadong:</strong> Traditional stilt houses, looks like the bathhouse from Spirited Away.</li>
+                        <li><strong>Liziba Station:</strong> The famous train that passes *through* an apartment building.</li>
+                        <li><strong>Yangtze River Cableway:</strong> Offers a great view of the skyline.</li>
+                    </ul>
+                    <div class="tips-box">
+                        <strong>Tip:</strong> Visit Nanshan (South Mountain) for a panoramic night view of the city.
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Shop -->
+            <div class="card" id="shop">
+                <div class="card-header bg-shop">🛍️</div>
+                <div class="card-body">
+                    <h3 class="card-title">Shop (购)</h3>
+                    <p>From luxury malls to night markets, shopping here is endless.</p>
+                    <ul>
+                        <li><strong>Three Gorges Square:</strong> Underground shopping malls with cheap fashion.</li>
+                        <li><strong>Supermarkets:</strong> Hema (Freshippo) offers fresh seafood and delivery.</li>
+                        <li><strong>Online:</strong> Taobao and JD are essential for daily life.</li>
+                    </ul>
+                    <div class="tips-box">
+                        <strong>Tip:</strong> Bargaining is expected in street markets, but not in malls.
+                    </div>
+                </div>
+            </div>
+
+             <!-- 7. Fun -->
+             <div class="card" id="fun">
+                <div class="card-header bg-fun">🎭</div>
+                <div class="card-body">
+                    <h3 class="card-title">Fun (娱)</h3>
+                    <p>The city comes alive at night.</p>
+                    <ul>
+                        <li><strong>Tea Houses:</strong> Experience the local slow-life culture in Ciqikou or parks.</li>
+                        <li><strong>Bars & Clubs:</strong> Jiefangbei and Nine Street (Jiu Jie) are the main party districts.</li>
+                        <li><strong>Foot Massage:</strong> Very common and affordable way to relax after walking.</li>
+                    </ul>
+                    <div class="tips-box">
+                        <strong>Tip:</strong> Join local expat groups on WeChat to find events and gatherings.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Chongqing Living Guide. Designed for Expats.</p>
+    </footer>
+
+</body>
+</html>
